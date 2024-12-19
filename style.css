@@ -1,77 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Love+Ya+Like+A+Sister&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Love+Ya+Like+A+Sister&family=Patrick+Hand+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Love+Ya+Like+A+Sister&family=Nerko+One&family=Patrick+Hand+SC&display=swap");
+
 :root {
-  font-size: 20px;
-  font-family: sans-serif;
-  --main-color: #008000;
-  --bg-color: hsl(120, 50%, 93%);
-  --dot-size: 3px;
+    font-family: Patrick Hand SC;
+    font-size: 40px;
+    --Green: #1ee9ab;
+    --Purple: #b59fff;
+    --Orange: #fba903;
+    --Blue: #03c1fb;
 }
 
 body {
-  height: 100vh;
-  margin: 0;
+    height: 100vh;
+    margin: 0;
+    /* background-image: radial-gradient(circle, #08dcad, #5be2b5, #82e8bf, #a1eeca, #bcf4d6); */
+}
 
-  background-color: var(--bg-color);
-  /* opacity: 0.8; */
-  background-image: radial-gradient(
-      var(--main-color) var(--dot-size),
-      transparent var(--dot-size)
-    ),
-    radial-gradient(
-      var(--main-color) var(--dot-size),
-      var(--bg-color) var(--dot-size)
-    );
-  background-size: calc(var(--dot-size) * 20) calc(var(--dot-size) * 20);
-  background-position: 0 0,
-    calc(var(--dot-size) * 10) calc(var(--dot-size) * 10);
-  /* transition:2s; */
+#green{
+    color: var(--Green);
+}
+#purple{
+    color: var(--Purple);
+}
+#orange{
+    color: var(--Orange);
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: var(--bg-color);
-  border-bottom: 1px solid var(--main-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid var(--Orange);
 }
 
 footer {
-  position: fixed;
-  height: 2em;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--bg-color);
-  border-top: 1px solid var(--main-color);
+    position: fixed;
+    height: 2em;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid var(--Orange);
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#wordoftheday {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 100px;
-  padding: 1em;
-  background: rgba(245, 255, 245, 0.8);
-}
+.wordoftheday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Nerko One;
+    font-size: 100px;
+    padding: 1em;
 
-#word {
-  font-size: larger;
-  text-decoration: green wavy underline;
-  text-transform: uppercase;
+}
+#pickedWord{
+    font-family: Patrick Hand SC;
+    border: 4px dashed var(--Blue);
+    border-radius: 20px;
+    padding: 0 0.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .copyright {
-  font-size: 15px;
+    font-size: 0.9em;
 }
